@@ -1,0 +1,30 @@
+
+.titleText{
+  padding: 10px 0 0 250px;
+}
+.tableSize{
+  width: 80%;
+  margin-left: 250px;
+}
+.postDescription{
+  font: normal 18px Calibri;
+  width : 250px;
+  overflow:hidden;
+  display:inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.descriptionTitle{
+  padding-left: 90px;
+}
+.newsTitle{
+  padding-left: 60px;
+}
+.newsTitleDescription{
+  width: 250px;
+  font: normal 18px Calibri;
+  word-break: break-word;
+}
+.authorMargin{
+  padding-left: 25px;
+}

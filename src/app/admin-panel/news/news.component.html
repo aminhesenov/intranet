@@ -1,0 +1,25 @@
+<app-admin-panel></app-admin-panel>
+<h4 class="titleText">Xəbərlər</h4>
+<hr />
+<button type="button" class="btn btn-secondary btn-sm addButton" routerLink="/sigin/adminpanel/news/addnews">{{addButton}}</button>
+<table class="table tableSize" >
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">{{numberTitle}}</th>
+    <th scope="col">{{pictureTitle}}</th>
+    <th scope="col" class="newsTitleMenu">{{newsTitle}}</th>
+    <th scope="col" class="editTitle">{{edit}}</th>
+    <th scope="col">{{deleteTitle}}</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let newsItems of news">
+  <tr>
+    <th scope="row">{{newsItems.number}}</th>
+    <td><img [src]="newsItems.picture" height="40" width="40" /></td>
+    <td class="newsTitle">{{newsItems.title}}</td>
+    <td title="redaktə et" routerLink="/sigin/adminpanel/news/edit"><img [src]="newsItems.editIcon" height="25" width="25" class="edit" /></td>
+    <td class="delete" title="sil"><img [src]="newsItems.deleteIcon" height="20" width="20" /></td>
+  </tr>
+  </tbody>
+</table>
+

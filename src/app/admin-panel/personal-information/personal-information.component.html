@@ -1,0 +1,19 @@
+<app-admin-panel></app-admin-panel>
+<h4 class="titleText">Şəxsi məlumatlar</h4>
+<hr />
+<div class="card cardCenter" style="width: 18rem;">
+  <img src="assets/person.png" height="250" width="100" class="card-img-top" alt="şəkil yoxdur">
+  <div class="card-body">
+    <h5 class="card-title pl-5">Amin Hasanov</h5>
+  </div>
+</div>
+<div class="listGroup" *ngFor="let personal of personalInformation">
+<ul class="list-group">
+  <li class="list-group-item">{{personal.region}}</li>
+  <li class="list-group-item">{{personal.degree}}</li>
+  <li class="list-group-item">{{personal.section}}</li>
+  <li class="list-group-item">{{personal.department}}</li>
+  <li class="list-group-item">{{personal.email}}</li>
+  <li class="list-group-item">{{personal.phone}}</li>
+</ul>
+</div>

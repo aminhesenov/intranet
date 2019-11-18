@@ -1,0 +1,19 @@
+.formSize{
+  width: 80%;
+  margin-left: 250px;
+}
+.titleText{
+  padding: 10px 0 0 250px;
+}
+#FormControlInput3{
+  margin-top: 10px;
+}
+.editText{
+  font-family: Calibri;
+  font-size: 20px;
+}
+.chooseFile{
+  border: 1px solid silver;
+  width: 35%;
+  border-radius: 3px;
+}

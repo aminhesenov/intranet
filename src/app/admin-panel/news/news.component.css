@@ -1,0 +1,35 @@
+.titleText{
+  padding: 10px 0 0 250px;
+}
+.tableSize{
+  width: 80%;
+  margin-left: 250px;
+}
+.delete{
+  cursor: pointer;
+}
+.newsTitleMenu{
+  padding-left: 200px;
+}
+.newsTitle{
+  width: 450px;
+  overflow:hidden;
+  display:inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.newsPicture{
+  width: 20%;
+}
+.edit{
+  margin-left: 30px;
+  cursor: pointer;
+}
+.editTitle{
+  padding-right: 65px;
+}
+.addButton{
+  margin: 0 0 15px 250px;
+  font-family: Calibri;
+  font-size: 18px;
+}
