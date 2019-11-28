@@ -1,0 +1,20 @@
+.titleText{
+  padding: 10px 0 0 250px;
+}
+.inputGroupSize{
+  width: 45%;
+  margin: auto;
+}
+.fileChoose{
+  border: 1px solid #D4D4D4;
+  width: 70%;
+  border-radius: 5px;
+  height: 32px;
+}
+.profileText{
+  height: 32px;
+}
+.refreshButton{
+  font: normal 20px Calibri;
+  padding: 5px 30px 5px 30px;
+}

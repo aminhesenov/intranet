@@ -1,0 +1,27 @@
+<app-admin-panel></app-admin-panel>
+<h4 class="titleText">İdeya və şikayətlər</h4>
+<hr />
+<table class="table tableSize">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">{{Number}}</th>
+    <th scope="col" class="authorPadding">{{Author}}</th>
+    <th scope="col" class="titleMenu">{{Title}}</th>
+    <th scope="col" class="descriptionTitle">{{Description}}</th>
+    <th scope="col">{{Type}}</th>
+    <th scope="col">{{More}}</th>
+    <th scope="col">{{Delete}}</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let items of details">
+  <tr>
+    <th scope="row">{{items.number}}</th>
+    <td>{{items.author}}</td>
+    <td class="titleItems">{{items.title}}</td>
+    <td class="description">{{items.description}}</td>
+    <td>{{items.type}}</td>
+    <td title="Ətraflı bax"><img class="moreIcon" [src]="items.more" height="40" width="40" /></td>
+    <td class="deleteIcon" title="Sil"><img [src]="items.delete" width="20" height="20" /></td>
+  </tr>
+  </tbody>
+</table>

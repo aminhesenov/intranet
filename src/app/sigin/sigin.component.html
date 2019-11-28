@@ -1,0 +1,20 @@
+<form method="POST"  #loginForm= 'ngForm' (ngSubmit)="login()">
+<div class="form-signin" *ngFor="let sign of signItems" [formGroup]="inculudeForm" (ngSubmit)="add()">
+  <div class="text-center mb-4">
+    <img class="mb-4" src="assets/logo.png" alt="" width="120" height="120">
+  </div>
+  <label>{{sign.userName}}</label>
+  <div class="form-label-group">
+    <input type="text" [(ngModel)]="model.username" id="inputUsername" formControlName="username" name="username" class="form-control" required autofocus>
+    <p class="wrongText" *ngIf="inculudeForm.get('username').hasError('required') && inculudeForm.get('username').touched">İstifadəçi adı daxil edilmədi!</p>
+  </div>
+  <label>{{sign.password}}</label>
+  <div class="form-label-group">
+    <input type="password" [(ngModel)]="model.password" id="inputPassword" formControlName="password" name="password" class="form-control" required>
+    <p class="wrongText" *ngIf="inculudeForm.get('password').hasError('required') && inculudeForm.get('password').dirty">Şifrə daxil edin!</p>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Daxil ol</button>
+  <br />
+  <a class="forgetPassword" routerLink="/sigin/forgetpassword">Şifrəni unutdum!</a>
+</div>
+</form>

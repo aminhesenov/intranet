@@ -7,7 +7,7 @@
     <th scope="col">{{number}}</th>
     <th scope="col">{{picture}}</th>
     <th scope="col" class="authorMargin">{{Author}}</th>
-    <th scope="col" class="newsTitle">{{Title}}</th>
+    <th scope="col" class="postTitle">{{Title}}</th>
     <th scope="col" class="descriptionTitle">{{Description}}</th>
     <th scope="col">{{More}}</th>
     <th scope="col">{{Delete}}</th>
@@ -18,10 +18,10 @@
     <th scope="row">{{postsItem.postNumber}}</th>
     <td><img [src]="postsItem.postPicture" height="40" width="40" /></td>
     <td>{{postsItem.postAuthor}}</td>
-    <td class="newsTitleDescription">{{postsItem.postTitle}}</td>
+    <td class="postTitleDescription">{{postsItem.postTitle}}</td>
     <td class="postDescription">{{postsItem.postDescription}}</td>
     <td><a href="#" title="Ətraflı bax"><img [src]="postsItem.postMore" height="40" width="40" /></a></td>
-    <td title="Paylaşımı sil"><img [src]="postsItem.postDelete" height="20" width="20" /></td>
+    <td title="Paylaşımı sil"><img [src]="postsItem.postDelete" height="20" width="20" class="deleteCursor" /></td>
   </tr>
   </tbody>
 </table>

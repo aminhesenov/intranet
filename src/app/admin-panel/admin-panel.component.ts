@@ -11,7 +11,7 @@ export class AdminPanelComponent implements OnInit {
   signOut = 'Çıxış';
   constructor(private authService: AuthService, private alertify: AlertifyjsService) { }
    menulist: any[] = [
-     {personalInformation: 'Şəxsi məlumatlar', news: 'Xəbərlər', post: 'Paylaşımlar', activate: 'Fəaliyyətlər', ideaComplaint: 'İdeya və şikayətlər', reserve: 'Baş tutmayan rezervlər', marquee: 'Qaçan yazı', setting: 'Parametrlər' }
+     {personalInformation: 'Şəxsi məlumatlar', news: 'Xəbərlər', post: 'Paylaşımlar', activate: 'Fəaliyyətlər', ideaComplaint: 'İdeya və şikayətlər', reserve: 'Rezervasiyalar', marquee: 'Elanlar', setting: 'Parametrlər' }
     ]
    ngOnInit() {
   }

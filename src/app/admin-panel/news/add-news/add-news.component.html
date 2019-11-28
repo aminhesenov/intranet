@@ -1,19 +1,22 @@
 <app-admin-panel></app-admin-panel>
 <h4 class="titleText">Xəbər əlavə edin</h4>
 <hr />
-<form class="formSize">
+<form class="formSize" [formGroup]="inculudeForm" (ngSubmit)="add()">
   <div class="form-group">
     <label for="exampleFormControlInput1">Başlıq</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="əlavə edin...">
+    <input type="text" formControlName="Title" name="Title" class="form-control" id="exampleFormControlInput1" placeholder="əlavə edin...">
+    <p class="wrongText" *ngIf="inculudeForm.get('Title').hasError('required') && inculudeForm.get('Title').touched">Başlıq daxil edilmədi!</p>
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput2">Xəbərin linki</label>
-    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="rəsmi səhifədəki xəbərin linkini daxil edin...">
+    <input type="text" formControlName="NewsLink" name="NewsLink" class="form-control" id="exampleFormControlInput2" placeholder="rəsmi səhifədəki xəbərin linkini daxil edin...">
+    <p class="wrongText" *ngIf="inculudeForm.get('NewsLink').hasError('required') && inculudeForm.get('NewsLink').touched">Link daxil edilmədi!</p>
   </div>
   <div class="form-group">
     <label for="FormControlInput3">Təsvir</label>
     <br />
-    <input type="file" accept=".jpg, .png, .jpeg" class="chooseFile" id="FormControlInput3" value="#" />
+    <input type="file" formControlName="Picture" name="Picture" accept=".jpg, .png, .jpeg" class="chooseFile" id="FormControlInput3" value="#" />
+    <p class="wrongText" *ngIf="inculudeForm.get('Picture').hasError('required') && inculudeForm.get('Picture').dirty">Təsvir seçilmədi!</p>
   </div>
   <button type="button" class="btn btn-success editText">Göndər</button>
 </form>

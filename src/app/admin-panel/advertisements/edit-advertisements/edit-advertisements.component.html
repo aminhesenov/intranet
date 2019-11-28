@@ -1,0 +1,30 @@
+<app-admin-panel></app-admin-panel>
+<h4 class="titleText">Elanı redaktə et</h4>
+<hr />
+<form class="formSize">
+  <div *ngFor="let dateEdit of editAdvertisements">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">{{title}}</label>
+    <input type="email" name="title" class="form-control" [value]="dateEdit.Title" id="exampleFormControlInput1">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">{{status}}</label>
+    <select class="form-control" id="exampleFormControlSelect1" [value]="dateEdit.Status">
+      <option selected="true" disabled>Seçin</option>
+      <option>Vacib</option>
+      <option>Qeyri-vacib</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">{{description}}</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" [value]="dateEdit.Description" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">{{document}}</label>
+    <br />
+    <input type="file" class="chooseFile" accept=".pdf, .docx, .doc" />
+  </div>
+  <br />
+  <button type="button" class="btn btn-primary btn-lg addBtn">Redaktə et</button>
+  </div>
+</form>

@@ -1,0 +1,42 @@
+.titleText{
+  padding: 10px 0 0 250px;
+}
+.addButton{
+  margin: 0 0 15px 250px;
+  font-family: Calibri;
+  font-size: 18px;
+}
+.tableSize{
+  width: 80%;
+  margin-left: 250px;
+}
+.editImg{
+  margin-left: 30px;
+  cursor: pointer;
+}
+.statusTitle{
+  padding-right: 20px;
+}
+.statusItems{
+  padding-left: 20px;
+}
+.descriptionItems{
+  width: 350px;
+  overflow:hidden;
+  display:inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.descriptionTitleSub{
+  padding-left: 140px;
+}
+.titleItems{
+  font: normal 18px Calibri;
+  word-break: break-word;
+}
+.title{
+  padding-left: 40px;
+}
+.deleteImg{
+  cursor: pointer;
+}

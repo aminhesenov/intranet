@@ -17,14 +17,17 @@
 .descriptionTitle{
   padding-left: 90px;
 }
-.newsTitle{
+.postTitle{
   padding-left: 60px;
 }
-.newsTitleDescription{
+.postTitleDescription{
   width: 250px;
   font: normal 18px Calibri;
   word-break: break-word;
 }
 .authorMargin{
-  padding-left: 25px;
+  padding-left: 30px;
+}
+.deleteCursor{
+  cursor: pointer;
 }

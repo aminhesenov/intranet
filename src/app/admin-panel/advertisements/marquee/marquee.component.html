@@ -1,0 +1,31 @@
+<app-admin-panel></app-admin-panel>
+<h4 class="titleText">Elan əlavə edin</h4>
+<hr />
+<form class="formSize" *ngFor="let addItems of Advertisement" [formGroup]="inculudeForm" (ngSubmit)="add()">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">{{addItems.Title}}</label>
+    <input type="email" formControlName="title" name="title" class="form-control" id="exampleFormControlInput1" placeholder="elanın başlığı...">
+    <p class="wrongText" *ngIf="inculudeForm.get('title').hasError('required') && inculudeForm.get('title').touched">Başlıq daxil edilmədi!</p>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">{{addItems.Status}}</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option selected="true" disabled>Seçin</option>
+      <option>Vacib</option>
+      <option>Qeyri-vacib</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">{{addItems.Description}}</label>
+    <textarea class="form-control" formControlName="description" id="exampleFormControlTextarea1" placeholder="açıqlama..." rows="3"></textarea>
+    <p class="wrongText" *ngIf="inculudeForm.get('description').hasError('required') && inculudeForm.get('description').touched">Mövzu daxil edilmədi!</p>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">{{addItems.Document}}</label>
+    <br />
+    <input type="file" formControlName="document" class="chooseFile" accept=".pdf, .docx, .doc" />
+    <p class="wrongText" *ngIf="inculudeForm.get('document').hasError('required') && inculudeForm.get('document').dirty">Sənəd seçilmədi!</p>
+  </div>
+  <br />
+  <button type="button" class="btn btn-primary btn-lg addBtn">Əlavə et</button>
+</form>

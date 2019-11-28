@@ -101,7 +101,7 @@ body {
   text-decoration: none;
 }
 .signOut:hover{
-  color: #972020;
+  color: silver;
 }
 .overflowFullName{
   word-break: break-word;

@@ -17,3 +17,8 @@
   width: 35%;
   border-radius: 3px;
 }
+.wrongText{
+  font: normal 18px Calibri;
+  color: red;
+  padding-top: 5px;
+}

@@ -1,0 +1,16 @@
+
+<nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" routerLink="/homepage">
+      <img class="logoImg" src="assets/logo.jpg" height="35" width="50" />
+    </a>
+    <a class="py-2 d-none d-md-inline-block mt-2" routerLink="/sigin/intranet/homepage" routerLinkActive="active"><i class="material-icons" style="float: left;">home</i> Ana səhifə</a>
+    <a class="py-2 d-none d-md-inline-block mt-2" routerLink="/sigin/intranet/profile" routerLinkActive="active"><i class="material-icons" style="float: left;">person</i> Hesabım</a>
+    <!--    <a class="py-2 d-none d-md-inline-block" href="#">Features</a>-->
+    <!--    <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>-->
+    <!--    <a class="py-2 d-none d-md-inline-block" href="#">Support</a>-->
+    <!--    <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>-->
+    <a class="py-2 d-none d-md-inline-block mt-2" (click)="logOut()" routerLink="/sigin"><i class="material-icons" style="float: left;">keyboard_tab</i> Çıxış</a>
+    <a class="py-2 d-none d-md-inline-block" href="#"><img class="rounded" src="assets/aminhasanov.jpeg" width="40" height="40" ></a>
+  </div>
+</nav>
